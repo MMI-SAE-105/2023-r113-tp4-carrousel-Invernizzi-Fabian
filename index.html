@@ -7,10 +7,26 @@
     <title>Document</title>
 
     <style>
+        *{
+        box-sizing: border-box;/* change le box model */
+        }
         img {
         max-width: 100%;/* image responsive, largeur maxi */
         height:auto;    /* hauteur "auto" */
         }
+        .carrousel_parent-ecrans {
+        display: flex;/* aligne horizontalement les enfants */
+        width: 100%;/* largeur du parent */
+
+        }
+        .carrousel_ecran {
+        width: 100%;/* largeur du parent pour chaque enfant */
+        flex: none;/* permet de garder toute la largeur du parent */
+        }
+        .carrousel_ecran figure {
+        margin: 0;/* enlève les marges par défaut */
+        }
+
     </style>
 
 </head>
