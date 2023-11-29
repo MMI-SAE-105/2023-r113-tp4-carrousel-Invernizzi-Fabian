@@ -10,13 +10,19 @@
         *{
         box-sizing: border-box;/* change le box model */
         }
+        
         img {
         max-width: 100%;/* image responsive, largeur maxi */
         height:auto;    /* hauteur "auto" */
+        scroll-snap-align: start; /* aligne les enfants par blocs */
         }
+
         .carrousel_parent-ecrans {
         display: flex;/* aligne horizontalement les enfants */
         width: 100%;/* largeur du parent */
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory; /* permet de scroller par blocs */
 
         }
         .carrousel_ecran {
