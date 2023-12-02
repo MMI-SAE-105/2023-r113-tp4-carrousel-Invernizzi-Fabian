@@ -70,14 +70,21 @@
         gap: 10px; /* espace entre les enfants */
         }
         .caroussel_lien.actif {
-            color: #4989d1; /* change the text color */
-            
+            color: #4989d1; /* change the text color */ 
             }
+
+        .image {
+        width: 500px;
+        height: 300px;
+        }
+        h1{
+            text-align: center;
+        }
     </style>
 
 </head>
 <body>
-    <h1>Carrousel</h1>
+    <h1>Chats & Chiens</h1>
 
     <div class="carrousel" x-data="{
     hrefCourant: '#ecran-1',
@@ -93,32 +100,32 @@
             >
                     <div id="ecran-1" class="carrousel_ecran">
                 <figure>
-                    <img src="img/chat_1.webp" alt="image ecran 1">
-                    <figcaption>Ecran 1</figcaption>
+                    <img class="image" src="img/chat_1.webp" alt="image ecran 1">
+                    <figcaption class="soustitre">Ecran 1</figcaption>
                 </figure>
             </div>
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
-                    <img src="img/chat&chien.jpg" alt="image ecran 2">
-                    <figcaption>Ecran 2</figcaption>
+                    <img class="image" src="img/Chien82.jpg" alt="image ecran 2">
+                    <figcaption class="soustitre">Ecran 2</figcaption>
                 </figure>
             </div>
             <div id="ecran-3" class="carrousel_ecran">
                 <figure>
-                    <img src="img/chatmarron.png" alt="image ecran 3">
-                    <figcaption>Ecran 3</figcaption>
+                    <img class="image" src="img/chatmarron.png" alt="image ecran 3">
+                    <figcaption class="soustitre">Ecran 3</figcaption>
                 </figure>
             </div>
             <div id="ecran-4" class="carrousel_ecran">
                 <figure>
-                    <img src="img/chien1.png" alt="image ecran 4">
-                    <figcaption>Ecran 4</figcaption>
+                    <img class="image" src="img/chien1.png" alt="image ecran 4">
+                    <figcaption class="soustitre">Ecran 4</figcaption>
                 </figure>
             </div>
             <div id="ecran-5" class="carrousel_ecran">
                 <figure>
-                    <img src="img/petitchien.png" alt="image ecran 5">
-                    <figcaption>Ecran 5</figcaption>
+                    <img class="image" src="img/petitchien.png" alt="image ecran 5">
+                    <figcaption class="soustitre">Ecran 5</figcaption>
                 </figure>
             </div>
         </div>
