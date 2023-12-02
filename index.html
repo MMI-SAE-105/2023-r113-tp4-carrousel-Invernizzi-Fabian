@@ -84,6 +84,37 @@
         .caroussel_liste-liens {
         margin-top: 20px;
         }
+        .caroussel_liste-liens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caroussel_liste-liens a {
+    text-decoration: none;
+    color: #353434;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+
+.caroussel_liste-liens a {
+    text-decoration: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1px solid black;
+    
+
+    
+}
+
+.caroussel_liste-liens a.actif {
+    background-color: rgb(163, 162, 162);
+}
     </style>
 
 </head>
@@ -134,11 +165,11 @@
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
-            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
-            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
-            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">ecran 4</a></li>
-            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">ecran 5</a></li>
+            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}"></a></li>
+            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}"></a></li>
+            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}"></a></li>
+            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}"></a></li>
+            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}"></a></li>
         </ul>
     </div>
 </body>
